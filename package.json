@@ -7,6 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "eslint -c .eslintrc.js --ext ts ./src --fix",
+    "format:fix": "pretty-quick --staged",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -20,6 +21,8 @@
     "@angular/platform-browser-dynamic": "~11.0.0",
     "@angular/router": "~11.0.0",
     "prettier": "^2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "pretty-quick": "^3.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
