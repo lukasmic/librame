@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --hmr",
     "build": "ng build",
     "test": "ng test",
-    "lint": "eslint -c .eslintrc.js --ext .ts ./src",
+    "lint": "eslint -c .eslintrc.js --ext ts ./src --fix",
     "e2e": "ng e2e"
   },
   "private": true,
