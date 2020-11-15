@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageItem } from 'ng-gallery';
+import { BUTERBRODS } from 'src/data/buterbrods';
 
 @Component({
   selector: 'app-image-library',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageLibraryComponent implements OnInit {
 
-  constructor() { }
+  public images!: Array<ImageItem>;
 
   public ngOnInit(): void {
+    this.images = BUTERBRODS.map(
+      buterbrod => new ImageItem({
+        src: buterbrod.src,
+        thumb: buterbrod.thumb
+      })
+    )
   }
-
 }
